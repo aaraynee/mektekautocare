@@ -4,6 +4,10 @@
     Theme Author: Ahmed
 */
 
+.header {
+    background: #001f44;
+}
+
 .section {
     padding: 50px;
 }

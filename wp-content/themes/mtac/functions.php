@@ -5,7 +5,6 @@
     function scripts() {
         wp_enqueue_style( 'style', get_stylesheet_uri() );
         wp_enqueue_style( 'ui-kit', get_stylesheet_directory_uri() . '/includes/css/uikit.almost-flat.css' );
-        wp_enqueue_script( 'twentyfifteen-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20141010', true );
 
     }
     add_action( 'wp_enqueue_scripts', 'scripts' );
@@ -52,6 +51,7 @@
                 ),
                 'public' => true,
                 'has_archive' => true,
+                'rewrite' => array( 'slug' => 'service' ),
                 'supports' => array( 'title', 'editor', 'excerpt', 'thumbnail', 'revisions', 'custom-fields'),
             )
         );
@@ -63,8 +63,14 @@
                 ),
                 'public' => true,
                 'has_archive' => true,
+                'rewrite' => array( 'slug' => 'coupon' ),
                 'supports' => array( 'title', 'editor', 'excerpt', 'thumbnail', 'revisions', 'custom-fields'),
             )
         );
     }
     add_action( 'init', 'mektek_post_type_init' );
+
+    add_theme_support( 'menus' );
+    register_nav_menus(array(
+        'primary' => __( 'Primary Menu', 'mtact' ),
+    ));
