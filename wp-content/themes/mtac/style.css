@@ -1,0 +1,75 @@
+/*
+    Theme Name: MTAC
+    Theme Version: 1.0.0
+    Theme Author: Ahmed
+*/
+
+.section {
+    padding: 50px;
+}
+
+.section.bg1 {
+    min-height: 300px;
+    background: url("http://mektek.com/wp-content/themes/mtac/includes/img/bg1.jpg") no-repeat;
+    background-size: cover;
+}
+
+.section.grey {
+    background: #d8d8d8;
+}
+
+.section.grey h1 {
+    text-transform: uppercase;
+    color: #001f44;
+}
+
+.section.yellow {
+    background: #ffcc0a;
+}
+
+.section.yellow h1 {
+    text-transform: uppercase;
+    color: #001f44;
+}
+
+.service-box {
+    border: 2px solid #001f44;
+    margin-bottom: 20px !important;
+}
+
+.service-box h4 {
+    text-transform: uppercase;
+    color: #001f44;
+    padding-top: 10px;
+    text-align: center;
+}
+
+.service-button {
+    background : #001f44;
+    color: #ffcc0a;
+    padding: 10px 20px;
+    text-transform: uppercase;
+}
+
+
+.footer {
+    padding: 20px;
+    background: #d8d8d8;
+}
+
+.footer h4 {
+    text-transform: uppercase;
+    color: #001f44;
+}
+
+.copyright {
+    padding: 10px;
+    background: #001f44;
+}
+
+.copyright p {
+    text-transform: uppercase;
+    font-size: 10px;
+    text-align:center;
+    color: #ffffff;
+}
