@@ -1,10 +1,11 @@
+<!--
 <div class="header">
     <div class="uk-container uk-container-center">
         <div class="uk-grid">
             <div class="uk-width-1-1">
                 <?php
 
-                $defaults = array(
+                /*$defaults = array(
                     'theme_location'  => '',
                     'menu'            => 'Main Menu',
                     'container'       => 'div',
@@ -23,7 +24,7 @@
                     'walker'          => 'Walker_UIKIT'
                 );
 
-                wp_nav_menu( $defaults );
+                wp_nav_menu( $defaults );*/
 
                 ?>
 
@@ -32,3 +33,4 @@
         </div>
     </div>
 </div>
+-->
