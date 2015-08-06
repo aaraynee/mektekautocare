@@ -33,66 +33,40 @@
         </div>
     </div>
 
-    <div class="section bg1">
+    <div class="section">
         <div class="uk-container uk-container-center">
             <div class="uk-grid">
                 <div class="uk-width-1-1">
-                    <p>&nbsp;</p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="section grey">
-        <div class="uk-container uk-container-center">
-            <div class="uk-grid">
-                <div class="uk-width-1-4">
                     <h1>Services</h1>
-                    <a class="service-button" href="/services">View All Services</a>
+                    <!--<a class="service-button" href="/services">View All Services</a>-->
                 </div>
-                <div class="uk-width-3-4">
-                    <div class="uk-grid">
-                        <?php
-                        $args = array( 'posts_per_page' => 6, 'post_type' => 'services');
-                        $myposts = get_posts( $args );
-                        foreach ( $myposts as $post ) : setup_postdata( $post ); ?>
-                            <div class="uk-width-1-3">
-                                <div class="service-box">
-                                    <?php the_post_thumbnail(); ?>
-                                    <h4><?php the_title(); ?></h4>
-                                    <p><?php the_content(); ?></p>
-                                </div>
-                            </div>
-                        <?php endforeach;
-                        wp_reset_postdata();?>
+                <?php
+                $args = array( 'posts_per_page' => 8, 'post_type' => 'services');
+                $myposts = get_posts( $args );
+                foreach ( $myposts as $post ) : setup_postdata( $post ); ?>
+                    <div class="uk-width-1-4 service-box">
+                        <?php the_post_thumbnail(); ?>
+                        <h2><?php the_title(); ?></h2>
+                        <p><?php the_content(); ?></p>
                     </div>
-                </div>
+                <?php endforeach;
+                wp_reset_postdata();?>
             </div>
         </div>
     </div>
 
-    <div class="section bg2">
+    <div class="section">
         <div class="uk-container uk-container-center">
             <div class="uk-grid">
                 <div class="uk-width-1-1">
-                    <p>&nbsp;</p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="section yellow">
-        <div class="uk-container uk-container-center">
-            <div class="uk-grid">
-                <div class="uk-width-1-4">
-                    <h1>Coupons</h1>
-                </div>
+			        <h1>Coupons</h1>
+		        </div>
 
                 <?php
                 $args = array( 'posts_per_page' => 3, 'post_type' => 'coupons');
                 $myposts = get_posts( $args );
                 foreach ( $myposts as $post ) : setup_postdata( $post ); ?>
-                    <div class="uk-width-1-4">
+                    <div class="uk-width-1-3">
                         <?php the_post_thumbnail(); ?>
                     </div>
                 <?php endforeach;
