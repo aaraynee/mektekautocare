@@ -48,11 +48,11 @@
 }
 
 .service-box {
+    border: 1px solid #ebebeb !important;
     padding: 5px 10px !important;
     float: left;
-    border-left: 1px solid #ebebeb;
     position: relative;
-    height: 300px;
+    height: 400px;
     background-repeat: no-repeat;
     background-color: #FFFFFF;
 }

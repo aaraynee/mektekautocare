@@ -44,8 +44,8 @@
                 $args = array( 'posts_per_page' => 8, 'post_type' => 'services');
                 $myposts = get_posts( $args );
                 foreach ( $myposts as $post ) : setup_postdata( $post ); ?>
-                    <div class="uk-width-1-4 service-box">
-                        <?php the_post_thumbnail(); ?>
+                    <div class="uk-width-1-4 service-box" style="background-position: bottom left;background-image: url(http://workingot.com/wp-content/uploads/2015/07/oil_service_large.png);">
+                        <?php //the_post_thumbnail(); ?>
                         <h2><?php the_title(); ?></h2>
                         <p><?php the_content(); ?></p>
                     </div>
