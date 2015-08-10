@@ -5,7 +5,39 @@
 */
 
 .header {
+    height: 65px;
     background: #001f44;
+}
+
+.header ul li {
+    float: left;
+    list-style: none;
+    vertical-align: middle;
+}
+
+.header ul li a {
+    font-size: 15px;
+    padding: 20px;
+    display: inline-block;
+    color: #ffcc0a;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.header ul li:hover a {
+    background: #ffcc0a;
+    color: #001f44;
+}
+
+.header .number {
+    padding-top: 20px;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 15px;
+    height: 65px;
+    display: block;
+    background: #ffcc0a;
+    color: #001f44;
 }
 
 .section {
@@ -29,22 +61,14 @@
     background: #001f44;
 }
 
-.section.bg1 {
-    min-height: 200px;
-    background: url("http://mektek.com/wp-content/themes/mtac/includes/img/02.jpg") no-repeat;
-    background-size: contain;
-}
-
-.section.bg2 {
-    min-height: 200px;
-    background: url("http://mektek.com/wp-content/themes/mtac/includes/img/03.jpg") no-repeat;
-    background-size: contain;
-}
-
-.section.bg3 {
-    min-height: 200px;
-    background: url("http://mektek.com/wp-content/themes/mtac/includes/img/08.jpg") no-repeat;
-    background-size: contain;
+.service-overview {
+    border: 1px solid #ebebeb !important;
+    padding: 25px 10px !important;
+    float: left;
+    position: relative;
+    height: 400px;
+    background-repeat: no-repeat;
+    background-color: #FFFFFF;
 }
 
 .service-box {
@@ -61,12 +85,23 @@
     box-shadow: 0px 5px 0px -1px #ffcc0a, 0px 9px 18px #999999;
     z-index: 1;
 }
+
+.service-box a {
+    height: 400px;
+    display: block;
+    text-decoration: none;
+}
+
 .service-box h2 {
     margin: 15px 0;
     text-align: center;
     display: block;
+    text-decoration: none;
 }
 
+.service-box p {
+    text-decoration: none;
+}
 
 .service-box h2:after {
     margin: 5px auto;

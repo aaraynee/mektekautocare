@@ -5,7 +5,7 @@
     function scripts() {
         wp_enqueue_style( 'style', get_stylesheet_uri() );
         wp_enqueue_style( 'ui-kit', get_stylesheet_directory_uri() . '/includes/css/uikit.almost-flat.css' );
-
+        wp_enqueue_script( 'ui-kit-js', get_stylesheet_directory_uri() . '/includes/js/uikit.min.js', array(), '1.0.0', true );
     }
     add_action( 'wp_enqueue_scripts', 'scripts' );
 
